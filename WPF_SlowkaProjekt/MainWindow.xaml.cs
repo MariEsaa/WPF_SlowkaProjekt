@@ -20,5 +20,14 @@ namespace WPF_SlowkaProjekt
         {
             InitializeComponent();
         }
+        private void DzialPoDziale_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GenerujLosowo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
