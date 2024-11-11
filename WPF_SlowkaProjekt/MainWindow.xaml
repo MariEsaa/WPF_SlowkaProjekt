@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Wybierz w jakiej formie chcesz rozwiązywac quizy"/>
+        <StackPanel>
+            <Label Content="Wybierz w jakiej formie chcesz rozwiązywac quizy"/>
+            <Button Content="Dział po dziale" 
+                    Click="DzialPoDziale_Click"/>
+            <Button Content="Generuj działy losowo" 
+                    Click="GenerujLosowo_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
