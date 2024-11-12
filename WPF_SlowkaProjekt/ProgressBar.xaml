@@ -24,7 +24,12 @@
                  VerticalAlignment="Top" 
                  Margin="0,60,0,0"/>
 
-
+        <TextBlock x:Name="RemainingProgressText" 
+               Text="Pozostało: 100%" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               FontSize="16" 
+               Margin="0,395,0,0"/>
 
 
     </Grid>
