@@ -12,6 +12,9 @@
             <Button x:Name="ChooseUnit"  
                     Content="Wybierz dział" 
                     Click="ChooseUnit_Click"/>
+            <Button x:Name="RandomUnit"
+                    Content="Generuj działy losowo"
+                    Click="RandomUnit_Click"/>
         </StackPanel>
     </Grid>
 </Window>

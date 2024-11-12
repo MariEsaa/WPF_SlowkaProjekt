@@ -27,5 +27,10 @@ namespace WPF_SlowkaProjekt
         {
 
         }
+
+        private void RandomUnit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
