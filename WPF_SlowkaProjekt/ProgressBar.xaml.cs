@@ -19,24 +19,45 @@ namespace WPF_SlowkaProjekt
     /// </summary>
     public partial class ProgressBar : Window
     {
+        private int solvedQuestionsCount = 0; 
+        private int maxQuestions = 100;
+        private int percent = 6;
+
         public ProgressBar()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
-        private void IncreaseProgress(object sender, RoutedEventArgs e)
+        
+        private void AddQuestionButton_Click(object sender, RoutedEventArgs e)
         {
-            if (UserProgressBar.Value < UserProgressBar.Maximum)
+            
+            if (solvedQuestionsCount + 10 <= maxQuestions)
             {
-                UserProgressBar.Value += 5; 
-                ProgressText.Text = $"{UserProgressBar.Value}% ukończono";
-            }
-        }
+                solvedQuestionsCount += percent;
 
-        private void ResetProgress(object sender, RoutedEventArgs e)
-        {
-            UserProgressBar.Value = 0; 
-            ProgressText.Text = "0% ukończono";
+                QuestionsCountText.Text = $"Liczba rozwiązanych pytań: {solvedQuestionsCount}";
+
+                
+                UserProgressBar.Value = (double)solvedQuestionsCount / maxQuestions * 100;
+
+                
+                double remainingPercentage = 100 - ((double)solvedQuestionsCount / maxQuestions * 100);
+                RemainingProgressText.Text = $"Pozostało: {remainingPercentage:0}%"; 
+            }
+            else
+            {
+                
+                solvedQuestionsCount = maxQuestions;
+                QuestionsCountText.Text = $"Liczba rozwiązanych pytań: {solvedQuestionsCount}";
+
+                UserProgressBar.Value = 100; 
+
+                
+                RemainingProgressText.Text = $"Pozostało: 0%";
+
+                MessageBox.Show("Osiągnąłeś maksymalny postęp!", "Informacja", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }

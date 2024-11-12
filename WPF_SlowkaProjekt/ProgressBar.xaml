@@ -7,16 +7,36 @@
         mc:Ignorable="d"
         Title="ProgressBar" Height="450" Width="800">
     <Grid>
-        <TextBlock Name="ProgressText" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontSize="16"/>
- 
-        <ProgressBar Name="UserProgressBar" Width="300" Height="25" Minimum="0" Maximum="100" Value="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="QuestionsCountText" 
+               Text="Liczba rozwiązanych pytań: 0" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               FontSize="16" 
+               Margin="0,20,0,0"/>
 
-        <Button Content="Zwiększ progres" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="195,0,0,20" Click="IncreaseProgress"/>
+        <ProgressBar x:Name="UserProgressBar" 
+                 Minimum="0" 
+                 Maximum="100" 
+                 Value="0" 
+                 Height="20" 
+                 Width="200" 
+                 HorizontalAlignment="Center" 
+                 VerticalAlignment="Center" 
+                 Margin="0,40,0,0"/>
 
-        <Button Content="Resetuj progres" Width="150" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="80,0,0,20" Click="ResetProgress"/>
-        
-        
-        
-        
+        <TextBlock x:Name="RemainingProgressText" 
+               Text="Pozostało: 100%" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Bottom" 
+               FontSize="16" 
+               Margin="0,0,0,40"/>
+
+        <Button Content="Dodaj rozwiązane slowko" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Bottom" 
+            Margin="0,0,0,20" 
+            Click="AddQuestionButton_Click"/>
     </Grid>
+
+
 </Window>
