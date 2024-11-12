@@ -9,6 +9,9 @@
     <Grid>
         <StackPanel>
             <Label Content="Wybierz w jakiej formie chcesz rozwiązywac quizy"/>
+            <Button x:Name="ChooseUnit"  
+                    Content="Wybierz dział" 
+                    Click="ChooseUnit_Click"/>
         </StackPanel>
     </Grid>
 </Window>
