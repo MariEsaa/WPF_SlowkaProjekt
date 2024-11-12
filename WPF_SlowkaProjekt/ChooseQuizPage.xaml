@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="ChooseQuizPage" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <Label Content="Wybierz w jakiej formie chcesz rozwiązywac quizy"/>
+        </StackPanel>
     </Grid>
 </Window>
