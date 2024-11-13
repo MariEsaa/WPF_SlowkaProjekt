@@ -15,6 +15,9 @@
             <Button x:Name="UserPageBtn"
                     Content="Mój Postęp"
                     Click="UserPageBtn_Click"/>
+            <TextBlock x:Name="GoalOfTheAppTextBlock"
+                       Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
+                       TextWrapping="WrapWithOverflow"/>
         </StackPanel>
     </Grid>
 </Window>
