@@ -1,14 +1,21 @@
-﻿<Window x:Class="WPF_SlowkaProjekt.QuizPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_SlowkaProjekt"
-        mc:Ignorable="d"
-        Title="QuizPage" Height="450" Width="800">
+﻿<Window
+    x:Class="WPF_SlowkaProjekt.QuizPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF_SlowkaProjekt"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="QuizPage"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
     <Grid>
         <StackPanel>
-            <TextBlock x:Name="QuestionTxt"/>
+            <TextBlock x:Name="QuestionTxt" />
+            <Button x:Name="Answer1Btn" Content="1" />
+            <Button x:Name="Answer2Btn" Content="2" />
+            <Button x:Name="Answer3Btn" Content="3" />
+            <Button x:Name="Answer4Btn" Content="4" />
         </StackPanel>
     </Grid>
 </Window>
