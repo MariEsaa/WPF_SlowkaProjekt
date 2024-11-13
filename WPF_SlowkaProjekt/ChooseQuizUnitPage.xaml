@@ -9,6 +9,59 @@
     <Grid>
         <StackPanel>
             <Label Content="Wybierz interesujący cię dział"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="Unit1Btn" 
+                        Content="Dział 1"
+                        Grid.Column="0"
+                        Grid.Row="0"/>
+                <Button x:Name="Unit2Btn" 
+                        Content="Dział 2"
+                        Grid.Column="0"
+                        Grid.Row="1"/>
+                <Button x:Name="Unit3Btn" 
+                        Content="Dział 3"
+                        Grid.Column="0"
+                        Grid.Row="2"/>
+                <Button x:Name="Unit4Btn" 
+                        Content="Dział 4"
+                        Grid.Column="0"
+                        Grid.Row="3"/>
+                <Button x:Name="Unit5Btn" 
+                        Content="Dział 5"
+                        Grid.Column="0"
+                        Grid.Row="4"/>
+                <Button x:Name="Unit6Btn" 
+                        Content="Dział 6"
+                        Grid.Column="1"
+                        Grid.Row="0"/>
+                <Button x:Name="Unit7Btn" 
+                        Content="Dział 7"
+                        Grid.Column="1"
+                        Grid.Row="1"/>
+                <Button x:Name="Unit8Btn" 
+                        Content="Dział 8"
+                        Grid.Column="1"
+                        Grid.Row="2"/>
+                <Button x:Name="Unit9Btn" 
+                        Content="Dział 9"
+                        Grid.Column="1"
+                        Grid.Row="3"/>
+                <Button x:Name="Unit10Btn" 
+                        Content="Dział 10"
+                        Grid.Column="1"
+                        Grid.Row="4"/>
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>
