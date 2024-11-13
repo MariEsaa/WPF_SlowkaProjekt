@@ -16,6 +16,7 @@
             <Button x:Name="Answer2Btn" Content="2" />
             <Button x:Name="Answer3Btn" Content="3" />
             <Button x:Name="Answer4Btn" Content="4" />
+            <Button x:Name="NextQuestionBtn" Content="Następne Słówko" />
         </StackPanel>
     </Grid>
 </Window>
