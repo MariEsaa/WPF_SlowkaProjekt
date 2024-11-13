@@ -20,5 +20,15 @@ namespace WPF_SlowkaProjekt
         {
             InitializeComponent();
         }
+
+        private void ChooseQuizPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UserPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
