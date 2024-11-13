@@ -8,9 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
+            <Label x:Name="WelcomeTextLbl" Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!"/>
             <Button x:Name="ChooseQuizPageBtn"
                     Content="Quizy"
                     Click="ChooseQuizPageBtn_Click"/>
+            <Button x:Name="UserPageBtn"
+                    Content="Mój Postęp"
+                    Click="UserPageBtn_Click"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -25,5 +25,10 @@ namespace WPF_SlowkaProjekt
         {
 
         }
+
+        private void UserPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
