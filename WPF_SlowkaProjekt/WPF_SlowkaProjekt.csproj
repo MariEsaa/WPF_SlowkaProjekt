@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Photos\" />
+    <None Remove="Photos\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Photos\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
