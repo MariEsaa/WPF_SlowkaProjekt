@@ -23,5 +23,10 @@ namespace WPF_SlowkaProjekt
         {
             InitializeComponent();
         }
+
+        private void NextQuestionBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
