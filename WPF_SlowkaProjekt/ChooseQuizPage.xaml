@@ -20,6 +20,18 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
+        <Button x:Name="ComeBack" 
+                Click="ComeBack_Click" 
+                Grid.Column="0" 
+                Grid.Row="0" 
+                Background="Transparent" 
+                BorderThickness="0" 
+                HorizontalAlignment="Left" 
+                ToolTip="Wróć do strony głównej">
+            <Image Source="Photos/wroc.png" 
+                   Width="70" 
+                   Height="70"/>
+        </Button>
         <Image
             x:Name="LogoImage"
             Grid.Row="1"

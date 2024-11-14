@@ -32,5 +32,12 @@ namespace WPF_SlowkaProjekt
         {
 
         }
+
+        private void ComeBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();   
+            mainWindow.Show();  
+            this.Close();
+        }
     }
 }
