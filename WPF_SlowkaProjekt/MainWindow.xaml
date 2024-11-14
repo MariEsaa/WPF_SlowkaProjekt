@@ -29,9 +29,14 @@
                         Grid.ColumnSpan="2"
                         Grid.Row="0"/>
                 <Label x:Name="WelcomeTextLbl"
-                        Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!" 
-                        Grid.ColumnSpan="2"
-                        Grid.Row="1"/>
+                       Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!" 
+                       Grid.ColumnSpan="2"
+                       Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="15"
+                       FontWeight="Bold"
+                       FontStyle="Italic"/>
                 <Button x:Name="ChooseQuizPageBtn"
                         Click="ChooseQuizPageBtn_Click"
                         Content="Quizy" 
