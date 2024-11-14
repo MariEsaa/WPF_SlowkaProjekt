@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WPF_SlowkaProjekt
@@ -27,6 +28,22 @@ namespace WPF_SlowkaProjekt
         private void NextQuestionBtn_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ComeBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainWindow.PreviousWindow == "ChooseQuizPage")
+            {
+                ChooseQuizPage chooseQuizPage = new ChooseQuizPage();
+                chooseQuizPage.Show();
+                this.Close();
+            }
+            else if (MainWindow.PreviousWindow == "ChooseQuizUnitPage")
+            {
+                ChooseQuizUnitPage chooseQuizUnitPage = new ChooseQuizUnitPage();
+                chooseQuizUnitPage.Show();
+                this.Close();
+            }
         }
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WPF_SlowkaProjekt
@@ -22,6 +23,14 @@ namespace WPF_SlowkaProjekt
         public ChooseQuizUnitPage()
         {
             InitializeComponent();
+        }
+
+        private void Unit1Btn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.PreviousWindow = "ChooseQuizUnitPage";
+            QuizPage quizPage = new QuizPage();
+            quizPage.Show();
+            this.Close();
         }
     }
 }

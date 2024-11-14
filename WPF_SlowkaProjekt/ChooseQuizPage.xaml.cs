@@ -25,12 +25,17 @@ namespace WPF_SlowkaProjekt
         }
         private void ChooseUnit_Click(object sender, RoutedEventArgs e)
         {
-
+            ChooseQuizUnitPage chooseQuizUnitPage = new ChooseQuizUnitPage();   
+            chooseQuizUnitPage.Show();  
+            this.Close();   
         }
 
         private void RandomUnit_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.PreviousWindow = "ChooseQuizPage";
+            QuizPage quizPage = new QuizPage();
+            quizPage.Show();
+            this.Close();
         }
 
         private void ComeBack_Click(object sender, RoutedEventArgs e)

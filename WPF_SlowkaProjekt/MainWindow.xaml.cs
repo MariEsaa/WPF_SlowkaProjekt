@@ -16,6 +16,7 @@ namespace WPF_SlowkaProjekt
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static string PreviousWindow = string.Empty;
         public MainWindow()
         {
             InitializeComponent();
