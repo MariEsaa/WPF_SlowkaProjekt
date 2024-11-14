@@ -22,9 +22,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button Width="40"
-            Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18"
-            FontWeight="Bold" Margin="10,0,0,0" Click="GoToMainWindow_Click" Background="Transparent" BorderThickness="0">
+        <Button Background="Transparent" ToolTip="Wroc do strony glownej"
+            Height="60" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18"
+            FontWeight="Bold"  Click="GoToMainWindow_Click"  BorderThickness="0" >
 
             <Image Source="Photos/wroc.png" Width="30" Height="30"/>
         </Button>
