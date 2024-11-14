@@ -23,5 +23,12 @@ namespace WPF_SlowkaProjekt
         {
             InitializeComponent();
         }
+        private void Unit1Btn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.PreviousWindow = "ChooseQuizUnitPage";
+            QuizPage quizPage = new QuizPage();
+            quizPage.Show();
+            this.Close();
+        }
     }
 }

@@ -28,6 +28,7 @@ namespace WPF_SlowkaProjekt
         {
 
         }
+
         private void ReturnToMainWindow(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
@@ -35,5 +36,20 @@ namespace WPF_SlowkaProjekt
             this.Close();
         }
 
+        private void ComeBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainWindow.PreviousWindow == "ChooseQuizPage")
+            {
+                ChooseQuizPage chooseQuizPage = new ChooseQuizPage();
+                chooseQuizPage.Show();
+                this.Close();
+            }
+            else if (MainWindow.PreviousWindow == "ChooseQuizUnitPage")
+            {
+                ChooseQuizUnitPage chooseQuizUnitPage = new ChooseQuizUnitPage();
+                chooseQuizUnitPage.Show();
+                this.Close();
+            }
+        }
     }
 }

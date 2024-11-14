@@ -33,6 +33,7 @@
             FontWeight="Bold" />
         <Button
             x:Name="Unit1Btn"
+            Click="Unit1Btn_Click"
             Grid.Row="2"
             Grid.Column="0"
             Width="250"

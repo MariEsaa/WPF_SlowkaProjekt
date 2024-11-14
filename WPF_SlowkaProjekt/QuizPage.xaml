@@ -21,6 +21,17 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <Button x:Name="ComeBack"
+            Click="ComeBack_Click"
+            Grid.Column="0" 
+            Grid.Row="0" 
+            Background="Transparent" 
+            BorderThickness="0" 
+            HorizontalAlignment="Left" 
+            ToolTip="Wróć do poprzedniej strony">   
+            <Image Source="Photos/wroc.png" Width="70" Height="70"/>
+        </Button>
+
         <Button 
             Background="Blue"
             BorderBrush="Black"
