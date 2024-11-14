@@ -28,6 +28,7 @@ namespace WPF_SlowkaProjekt
             MainWindow.PreviousWindow = "ChooseQuizUnitPage";
             QuizPage quizPage = new QuizPage();
             quizPage.Show();
+
             this.Close();
         }
     }
