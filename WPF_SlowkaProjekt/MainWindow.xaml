@@ -9,22 +9,45 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid>
-        <StackPanel>
-            <Label x:Name="WelcomeTextLbl" Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!" />
-            <Button
-                x:Name="ChooseQuizPageBtn"
-                Click="ChooseQuizPageBtn_Click"
-                Content="Quizy" />
-            <Button
-                x:Name="UserPageBtn"
-                Click="UserPageBtn_Click"
-                Content="Mój Postęp" />
-            <TextBlock
-                x:Name="GoalOfTheAppTextBlock"
-                Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
-                TextWrapping="WrapWithOverflow" />
-            <Image x:Name="LogoImage" Source="Photos/logo.png" Width="50"/>
+    <Grid Background="WhiteSmoke">
+        <StackPanel Background="WhiteSmoke">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Image  x:Name="LogoImage"
+                        Width="50"
+                        Source="Photos/logo.png" 
+                        Grid.ColumnSpan="2"
+                        Grid.Row="0"/>
+                <Label x:Name="WelcomeTextLbl"
+                        Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!" 
+                        Grid.ColumnSpan="2"
+                        Grid.Row="1"/>
+                <Button x:Name="ChooseQuizPageBtn"
+                        Click="ChooseQuizPageBtn_Click"
+                        Content="Quizy" 
+                        Grid.Column="0"
+                        Grid.Row="2"/>
+                <Button x:Name="UserPageBtn"
+                        Click="UserPageBtn_Click"
+                        Content="Mój Postęp" 
+                        Grid.Column="1"
+                        Grid.Row="2"/>
+                <TextBlock  x:Name="GoalOfTheAppTextBlock"
+                            Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
+                            TextWrapping="WrapWithOverflow" 
+                            Grid.ColumnSpan="2"
+                            Grid.Row="4"/>
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>
