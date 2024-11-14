@@ -12,7 +12,26 @@
     <Grid>
         
         <StackPanel>
-            <Button Content="Strona Glowna" Width="100" Height="40" HorizontalAlignment="Right" Click="ReturnToMainWindow"/>
+            <Button 
+                Background="Blue"
+                BorderBrush="Black"
+                FontSize="12"
+                FontWeight="Bold"
+                Foreground="White"
+                Content="Strona Glowna" 
+                Width="100" Height="40" 
+                HorizontalAlignment="Right" 
+                BorderThickness="3"  
+                Click="ReturnToMainWindow" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="7" />
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            
+            
             <TextBlock x:Name="QuestionTxt" />
             <Button x:Name="Answer1Btn" Content="1" />
             <Button x:Name="Answer2Btn" Content="2" />
