@@ -27,7 +27,10 @@
             Margin="5"
             BorderBrush="Black"
             BorderThickness="3"
-            CornerRadius="10">
+            CornerRadius="10"
+            Background="Blue"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
             <TextBlock x:Name="QuestionTxt" 
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
@@ -35,12 +38,106 @@
                        FontWeight="Black"
                        TextWrapping="Wrap"
                        Width="700"
-                       Height="70"/>
+                       Height="70"
+                       Foreground="White"
+                       TextAlignment="Center" />
         </Border>
-            <Button x:Name="Answer1Btn" Content="1" />
-            <Button x:Name="Answer2Btn" Content="2" />
-            <Button x:Name="Answer3Btn" Content="3" />
-            <Button x:Name="Answer4Btn" Content="4" />
+        <Button
+            x:Name="Answer1Btn"
+            Grid.Row="2"
+            Grid.Column="0"
+            Width="350"
+            Height="80"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="blue"
+            BorderBrush="Black"
+            BorderThickness="4"
+            FontSize="15"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+            <Button.Content>
+                <TextBlock x:Name="Answer1Txt"
+                           TextWrapping="Wrap"/>
+            </Button.Content>
+        </Button>
+        <Button
+            x:Name="Answer2Btn"
+            Grid.Row="3"
+            Grid.Column="0"
+            Width="350"
+            Height="80"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="blue"
+            BorderBrush="Black"
+            BorderThickness="4"
+            FontSize="15"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+            <Button.Content>
+                <TextBlock x:Name="Answer2Txt"
+                   TextWrapping="Wrap"/>
+            </Button.Content>
+        </Button>
+        <Button
+            x:Name="Answer3Btn"
+            Grid.Row="2"
+            Grid.Column="1"
+            Width="350"
+            Height="80"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="blue"
+            BorderBrush="Black"
+            BorderThickness="4"
+            FontSize="15"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+            <Button.Content>
+                <TextBlock x:Name="Answer3Txt"
+                   TextWrapping="Wrap"/>
+            </Button.Content>
+        </Button>
+        <Button
+            x:Name="Answer4Btn"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="350"
+            Height="80"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="blue"
+            BorderBrush="Black"
+            BorderThickness="4"
+            FontSize="15"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+            <Button.Content>
+                <TextBlock x:Name="Answer4Txt"
+                   TextWrapping="Wrap"/>
+            </Button.Content>
+        </Button>
         <Button
                 x:Name="NextQuestionBtn"
                 Click="NextQuestionBtn_Click"
