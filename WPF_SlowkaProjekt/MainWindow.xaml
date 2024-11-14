@@ -41,12 +41,46 @@
                         Click="ChooseQuizPageBtn_Click"
                         Content="Quizy" 
                         Grid.Column="0"
-                        Grid.Row="2"/>
+                        Grid.Row="2"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="150"
+                        Height="40"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Background="Blue"
+                        BorderBrush="Black"
+                        BorderThickness="3"
+                        Margin="15">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                </Button>
                 <Button x:Name="UserPageBtn"
                         Click="UserPageBtn_Click"
                         Content="Mój Postęp" 
                         Grid.Column="1"
-                        Grid.Row="2"/>
+                        Grid.Row="2"        
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="150"
+                        Height="40"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Background="Blue"
+                        BorderBrush="Black"
+                        BorderThickness="3"
+                        Margin="15">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                </Button>
                 <TextBlock  x:Name="GoalOfTheAppTextBlock"
                             Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
                             TextWrapping="WrapWithOverflow" 
