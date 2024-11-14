@@ -6,15 +6,24 @@
         xmlns:local="clr-namespace:WPF_SlowkaProjekt"
         mc:Ignorable="d"
         Title="ChooseQuizPage" Height="450" Width="800">
-    <Grid>
-        <StackPanel>
-            <Label Content="Wybierz w jakiej formie chcesz rozwiązywac quizy"/>
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Wybierz w jakiej formie chcesz rozwiązywac quizy"/>
             <Button x:Name="ChooseUnit"  
                     Content="Wybierz dział" 
                     Click="ChooseUnit_Click"/>
-            <Button x:Name="RandomUnit"
+        <Button x:Name="RandomUnit"
                     Content="Generuj działy losowo"
                     Click="RandomUnit_Click"/>
-        </StackPanel>
     </Grid>
 </Window>
