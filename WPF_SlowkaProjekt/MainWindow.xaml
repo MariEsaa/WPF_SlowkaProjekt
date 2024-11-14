@@ -10,119 +10,117 @@
     Height="500"
     mc:Ignorable="d">
     <Grid Background="WhiteSmoke">
-        <StackPanel Background="WhiteSmoke">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="auto" />
-                </Grid.RowDefinitions>
-                <Image
-                    x:Name="LogoImage"
-                    Grid.Row="0"
-                    Grid.ColumnSpan="2"
-                    Width="100"
-                    Source="Photos/logo.png" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Image
+            x:Name="LogoImage"
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            Width="100"
+            Source="Photos/logo.png" />
+        <Label
+            x:Name="WelcomeTextLbl"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!"
+            FontSize="15"
+            FontStyle="Italic"
+            FontWeight="Bold" />
+        <Button
+            x:Name="ChooseQuizPageBtn"
+            Grid.Row="2"
+            Grid.Column="0"
+            Width="150"
+            Height="40"
+            Margin="15"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Blue"
+            BorderBrush="Black"
+            BorderThickness="3"
+            Click="ChooseQuizPageBtn_Click"
+            Content="Quizy"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button
+            x:Name="UserPageBtn"
+            Grid.Row="2"
+            Grid.Column="1"
+            Width="150"
+            Height="40"
+            Margin="15"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Blue"
+            BorderBrush="Black"
+            BorderThickness="3"
+            Click="UserPageBtn_Click"
+            Content="Mój Postęp"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Border
+            Grid.Row="3"
+            Grid.Column="0"
+            Margin="5"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="10">
+            <Image
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Source="Photos/StronaGlownaZdjecie.jpg"
+                Stretch="Fill" />
+        </Border>
+        <Border
+            Grid.Row="3"
+            Grid.Column="1"
+            Margin="5"
+            Padding="10"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="10">
+            <StackPanel>
                 <Label
-                    x:Name="WelcomeTextLbl"
-                    Grid.Row="1"
-                    Grid.ColumnSpan="2"
+                    Margin="0,0,0,20"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!"
-                    FontSize="15"
+                    Content="Cel Aplikacji"
+                    FontSize="35"
                     FontStyle="Italic"
                     FontWeight="Bold" />
-                <Button
-                    x:Name="ChooseQuizPageBtn"
-                    Grid.Row="2"
-                    Grid.Column="0"
-                    Width="150"
-                    Height="40"
-                    Margin="15"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Background="Blue"
-                    BorderBrush="Black"
-                    BorderThickness="3"
-                    Click="ChooseQuizPageBtn_Click"
-                    Content="Quizy"
-                    FontSize="20"
-                    FontWeight="Bold"
-                    Foreground="White">
-                    <Button.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="7" />
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Button
-                    x:Name="UserPageBtn"
-                    Grid.Row="2"
+                <TextBlock
+                    x:Name="GoalOfTheAppTextBlock"
+                    Grid.Row="3"
                     Grid.Column="1"
-                    Width="150"
-                    Height="40"
-                    Margin="15"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Background="Blue"
-                    BorderBrush="Black"
-                    BorderThickness="3"
-                    Click="UserPageBtn_Click"
-                    Content="Mój Postęp"
-                    FontSize="20"
-                    FontWeight="Bold"
-                    Foreground="White">
-                    <Button.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="7" />
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Border BorderBrush="Black" 
-                        BorderThickness="3" 
-                        CornerRadius="10"  
-                        Grid.Row="3"
-                        Grid.Column="0"
-                        Margin="5">
-                    <Image
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Stretch="Fill"
-                        Source="Photos/StronaGlownaZdjecie.jpg" />
-                </Border>
-                <Border BorderBrush="Black" 
-                        BorderThickness="3" 
-                        CornerRadius="10"  
-                        Grid.Row="3"
-                        Grid.Column="1" 
-                        Padding="10"
-                        Margin="5">
-                    <StackPanel>
-                        <Label Content="Cel Aplikacji"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               FontSize="35"
-                               FontWeight="Bold"
-                               FontStyle="Italic"
-                               Margin="0,0,0,20"/>
-                        <TextBlock
-                               x:Name="GoalOfTheAppTextBlock"
-                               Grid.Row="3"
-                               Grid.Column="1"
-                               Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
-                               TextWrapping="WrapWithOverflow" 
-                               FontSize="15"
-                               FontWeight="DemiBold"
-                                />
-                    </StackPanel>
-                </Border>
-            </Grid>
-        </StackPanel>
+                    FontSize="15"
+                    FontWeight="DemiBold"
+                    Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
+                    TextWrapping="WrapWithOverflow" />
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

@@ -1,35 +1,77 @@
-﻿<Window x:Class="WPF_SlowkaProjekt.ProgressBar"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_SlowkaProjekt"
-        mc:Ignorable="d"
-        Title="ProgressBar" Height="450" Width="800">
-    <Grid>
-        <TextBlock x:Name="QuestionsCountText" 
-               Text="Liczba rozwiązanych pytań: 0" 
-               HorizontalAlignment="Center" 
-               VerticalAlignment="Top" 
-               FontSize="16" 
-               Margin="0,20,0,0"/>
+﻿<Window
+    x:Class="WPF_SlowkaProjekt.ProgressBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF_SlowkaProjekt"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Wordy"
+    Width="800"
+    Height="500"
+    mc:Ignorable="d">
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            x:Name="QuestionsCountText"
+            Grid.ColumnSpan="2"
+            Grid.Row="2"
+            FontSize="25"
+            FontWeight="Bold"
+            Margin="0,20,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Text="Liczba rozwiązanych pytań: 0" />
 
-        <ProgressBar x:Name="UserProgressBar" 
-                 Minimum="0" 
-                 Maximum="100" 
-                 Value="0" 
-                 Height="20" 
-                 Width="200" 
-                 HorizontalAlignment="Center" 
-                 VerticalAlignment="Top" 
-                 Margin="0,60,0,0"/>
+        <StackPanel Grid.Row="3"
+                    Grid.ColumnSpan="2">
+            <Label Content="Twój dotychczasowy progress"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="20"
+                   FontWeight="Bold"/>
+            <ProgressBar
+                 x:Name="UserProgressBar"
+                 Width="400"
+                 Height="30"
+                 Margin="0,10,0,0"
+                 Background="White"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Maximum="100"
+                 Minimum="0">
+                <ProgressBar.Template>
+                    <ControlTemplate TargetType="ProgressBar">
+                        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="3">
+                            <Grid Background="White" Margin="3">
+                                <Rectangle Name="PART_Track" Fill="Transparent" />
+                                <Rectangle Name="PART_Indicator" Fill="Green" HorizontalAlignment="Left" />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </ProgressBar.Template>
+            </ProgressBar>
+        </StackPanel>
 
-        <TextBlock x:Name="RemainingProgressText" 
-               Text="Pozostało: 100%" 
-               HorizontalAlignment="Center" 
-               VerticalAlignment="Top" 
-               FontSize="16" 
-               Margin="0,395,0,0"/>
+        <TextBlock
+            x:Name="RemainingProgressText"
+            Grid.ColumnSpan="2"
+            Grid.Row="4"
+            FontSize="25"
+            FontWeight="Bold"
+            Margin="0,20,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Text="Do ukończenia kursu pozostało: 100%" />
 
 
     </Grid>
