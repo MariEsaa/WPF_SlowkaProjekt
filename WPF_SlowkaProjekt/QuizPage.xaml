@@ -9,17 +9,41 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid>
-        <StackPanel>
-            <TextBlock x:Name="QuestionTxt" />
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border
+            Grid.ColumnSpan="2"
+            Grid.Row="1"
+            Margin="5"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="10">
+            <TextBlock x:Name="QuestionTxt" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="20"
+                       FontWeight="Black"
+                       TextWrapping="Wrap"
+                       Width="700"
+                       Height="70"/>
+        </Border>
             <Button x:Name="Answer1Btn" Content="1" />
             <Button x:Name="Answer2Btn" Content="2" />
             <Button x:Name="Answer3Btn" Content="3" />
             <Button x:Name="Answer4Btn" Content="4" />
-            <Button
+        <Button
                 x:Name="NextQuestionBtn"
                 Click="NextQuestionBtn_Click"
                 Content="Następne Słówko" />
-        </StackPanel>
     </Grid>
 </Window>
