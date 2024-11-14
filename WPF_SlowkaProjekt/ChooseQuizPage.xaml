@@ -18,11 +18,18 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
+        <Image
+            x:Name="LogoImage"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Width="100"
+            Source="Photos/logo.png" />
         <Label
             Grid.Row="2"
             Grid.ColumnSpan="2"
+            Margin="30"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Content="Wybierz w jakiej formie chcesz rozwiązywac quizy"
@@ -30,11 +37,6 @@
             FontWeight="bold" />
         <Button
             x:Name="ChooseUnit"
-            Click="ChooseUnit_Click"
-            Content="Wybierz dział"
-            FontSize="20"
-            FontWeight="Bold"
-            Foreground="White"
             Grid.Row="3"
             Grid.Column="0"
             Width="250"
@@ -44,7 +46,12 @@
             VerticalAlignment="Center"
             Background="Blue"
             BorderBrush="Black"
-            BorderThickness="3">
+            BorderThickness="3"
+            Click="ChooseUnit_Click"
+            Content="Wybierz dział"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="White">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="7" />
@@ -53,11 +60,6 @@
         </Button>
         <Button
             x:Name="RandomUnit"
-            Click="RandomUnit_Click"
-            Content="Generuj działy losowo"
-            FontSize="20"
-            FontWeight="Bold"
-            Foreground="White"
             Grid.Row="3"
             Grid.Column="1"
             Width="250"
@@ -67,7 +69,12 @@
             VerticalAlignment="Center"
             Background="Blue"
             BorderBrush="Black"
-            BorderThickness="3">
+            BorderThickness="3"
+            Click="RandomUnit_Click"
+            Content="Generuj działy losowo"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="White">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="7" />
