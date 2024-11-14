@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Wordy"
     Width="800"
-    Height="450"
+    Height="500"
     mc:Ignorable="d">
     <Grid Background="WhiteSmoke">
         <StackPanel Background="WhiteSmoke">
@@ -84,22 +84,44 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Image
-                    Grid.Row="3"
-                    Grid.Column="0"
-                    Height="245"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Source="Photos/StronaGlowna Zdjecie.jpg" />
-                <StackPanel Grid.Row="3"
-                            Grid.Column="1">
-                    <TextBlock
-                                x:Name="GoalOfTheAppTextBlock"
-                                Grid.Row="3"
-                                Grid.Column="1"
-                                Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
-                                TextWrapping="WrapWithOverflow" />
-                </StackPanel>
+                <Border BorderBrush="Black" 
+                        BorderThickness="3" 
+                        CornerRadius="10"  
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Margin="5">
+                    <Image
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Stretch="Fill"
+                        Source="Photos/StronaGlownaZdjecie.jpg" />
+                </Border>
+                <Border BorderBrush="Black" 
+                        BorderThickness="3" 
+                        CornerRadius="10"  
+                        Grid.Row="3"
+                        Grid.Column="1" 
+                        Padding="10"
+                        Margin="5">
+                    <StackPanel>
+                        <Label Content="Cel Aplikacji"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="35"
+                               FontWeight="Bold"
+                               FontStyle="Italic"
+                               Margin="0,0,0,20"/>
+                        <TextBlock
+                               x:Name="GoalOfTheAppTextBlock"
+                               Grid.Row="3"
+                               Grid.Column="1"
+                               Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
+                               TextWrapping="WrapWithOverflow" 
+                               FontSize="15"
+                               FontWeight="DemiBold"
+                                />
+                    </StackPanel>
+                </Border>
             </Grid>
         </StackPanel>
     </Grid>
