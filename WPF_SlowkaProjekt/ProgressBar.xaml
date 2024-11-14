@@ -21,6 +21,12 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <Image
+            x:Name="LogoImage"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Width="100"
+            Source="Photos/logo.png" />
         <TextBlock
             x:Name="QuestionsCountText"
             Grid.ColumnSpan="2"
