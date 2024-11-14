@@ -28,5 +28,12 @@ namespace WPF_SlowkaProjekt
         {
 
         }
+        private void ReturnToMainWindow(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+
     }
 }
