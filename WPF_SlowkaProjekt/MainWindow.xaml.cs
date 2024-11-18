@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_SlowkaProjekt.ClassModel;
 
 namespace WPF_SlowkaProjekt
 {
@@ -16,9 +18,13 @@ namespace WPF_SlowkaProjekt
     /// </summary>
     public partial class MainWindow : Window
     {
+        WordsContext _context = new WordsContext();
         public MainWindow()
         {
             InitializeComponent();
+            _context.Add(new WordModel());
+            _context.Words.ToList();
+            Debug.WriteLine("ESSA");
         }
     }
 }
