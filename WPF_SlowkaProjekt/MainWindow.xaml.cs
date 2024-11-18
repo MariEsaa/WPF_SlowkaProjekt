@@ -24,17 +24,20 @@ namespace WPF_SlowkaProjekt
         {
             InitializeComponent();
             var list = _context.Words.ToList();
-            Debug.WriteLine("ESA");
         }
 
         private void ChooseQuizPageBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            var NewWindow = new ChooseQuizPage();
+            NewWindow.Show();
+            this.Close();
         }
 
         private void UserPageBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            var NewWindow = new ProgressBar();
+            NewWindow.Show();
+            this.Close();
         }
     }
 }

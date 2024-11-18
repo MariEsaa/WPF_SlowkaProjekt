@@ -28,7 +28,7 @@
             Background="Transparent" 
             BorderThickness="0" 
             HorizontalAlignment="Left" 
-            ToolTip="Wróć do poprzedniej strony">   
+            ToolTip="Wróć do poprzedniej strony">
             <Image Source="Photos/wroc.png" Width="70" Height="70"/>
         </Button>
 
@@ -44,7 +44,7 @@
             BorderThickness="3"  
             Grid.Column="1"
             Click="ReturnToMainWindow"
-            Margin="10">    
+            Margin="10">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="7" />
@@ -76,6 +76,7 @@
         </Border>
         <Button
             x:Name="Answer1Btn"
+            Click="Answer_Click"
             Grid.Row="2"
             Grid.Column="0"
             Width="350"
@@ -100,6 +101,7 @@
         </Button>
         <Button
             x:Name="Answer2Btn"
+            Click="Answer_Click"
             Grid.Row="3"
             Grid.Column="0"
             Width="350"
@@ -124,6 +126,7 @@
         </Button>
         <Button
             x:Name="Answer3Btn"
+            Click="Answer_Click"
             Grid.Row="2"
             Grid.Column="1"
             Width="350"
@@ -148,6 +151,7 @@
         </Button>
         <Button
             x:Name="Answer4Btn"
+            Click="Answer_Click"
             Grid.Row="3"
             Grid.Column="1"
             Width="350"
