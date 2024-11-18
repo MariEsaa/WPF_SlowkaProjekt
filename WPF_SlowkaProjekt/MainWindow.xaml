@@ -1,12 +1,126 @@
-﻿<Window x:Class="WPF_SlowkaProjekt.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_SlowkaProjekt"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+﻿<Window
+    x:Class="WPF_SlowkaProjekt.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF_SlowkaProjekt"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Wordy"
+    Width="800"
+    Height="500"
+    mc:Ignorable="d">
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Image
+            x:Name="LogoImage"
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            Width="100"
+            Source="Photos/logo.png" />
+        <Label
+            x:Name="WelcomeTextLbl"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="Witaj w aplikacji Wordy.Słówka na wyciągnięcie ręki – ucz się angielskiego, kiedy chcesz!"
+            FontSize="15"
+            FontStyle="Italic"
+            FontWeight="Bold" />
+        <Button
+            x:Name="ChooseQuizPageBtn"
+            Grid.Row="2"
+            Grid.Column="0"
+            Width="150"
+            Height="40"
+            Margin="15"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Blue"
+            BorderBrush="Black"
+            BorderThickness="3"
+            Click="ChooseQuizPageBtn_Click"
+            Content="Quizy"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button
+            x:Name="UserPageBtn"
+            Grid.Row="2"
+            Grid.Column="1"
+            Width="150"
+            Height="40"
+            Margin="15"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Blue"
+            BorderBrush="Black"
+            BorderThickness="3"
+            Click="UserPageBtn_Click"
+            Content="Mój Postęp"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="White">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Border
+            Grid.Row="3"
+            Grid.Column="0"
+            Margin="5"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="10">
+            <Image
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Source="Photos/StronaGlownaZdjecie.jpg"
+                Stretch="Fill" />
+        </Border>
+        <Border
+            Grid.Row="3"
+            Grid.Column="1"
+            Margin="5"
+            Padding="10"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="10">
+            <StackPanel>
+                <Label
+                    Margin="0,0,0,20"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="Cel Aplikacji"
+                    FontSize="35"
+                    FontStyle="Italic"
+                    FontWeight="Bold" />
+                <TextBlock
+                    x:Name="GoalOfTheAppTextBlock"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    FontSize="15"
+                    FontWeight="DemiBold"
+                    Text="Pomagamy użytkownikom skutecznie i przyjemnie uczyć się angielskich słówek, rozwijając ich słownictwo w sposób dostosowany do indywidualnych potrzeb, aby mogli pewniej komunikować się w języku angielskim."
+                    TextWrapping="WrapWithOverflow" />
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

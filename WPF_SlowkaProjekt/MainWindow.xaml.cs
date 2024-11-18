@@ -16,9 +16,20 @@ namespace WPF_SlowkaProjekt
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static string PreviousWindow = string.Empty;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ChooseQuizPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UserPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

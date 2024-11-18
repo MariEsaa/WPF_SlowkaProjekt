@@ -15,21 +15,21 @@ using System.Windows.Shapes;
 namespace WPF_SlowkaProjekt
 {
     /// <summary>
-    /// Logika interakcji dla klasy ProgressBar.xaml
+    /// Logika interakcji dla klasy ChooseQuizUnitPage.xaml
     /// </summary>
-    public partial class ProgressBar : Window
+    public partial class ChooseQuizUnitPage : Window
     {
-        public ProgressBar()
+        public ChooseQuizUnitPage()
         {
             InitializeComponent();
         }
-
-        private void GoToMainWindow_Click(object sender, RoutedEventArgs e)
+        private void Unit1Btn_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            MainWindow.PreviousWindow = "ChooseQuizUnitPage";
+            QuizPage quizPage = new QuizPage();
+            quizPage.Show();
+
             this.Close();
         }
-
     }
 }
