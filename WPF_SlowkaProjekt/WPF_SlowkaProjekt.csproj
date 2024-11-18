@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
     <None Remove="Photos\logo.png" />
     <None Remove="Photos\StronaGlownaZdjecie.jpg" />
     <None Remove="Photos\wroc.png" />
