@@ -11,15 +11,15 @@
     mc:Ignorable="d">
     <Grid Background="WhiteSmoke">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Button x:Name="ComeBack"
             Click="ComeBack_Click"
@@ -54,25 +54,26 @@
         </Button>
 
         <Border
-            Grid.ColumnSpan="2"
             Grid.Row="1"
+            Grid.ColumnSpan="2"
             Margin="5"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Blue"
             BorderBrush="Black"
             BorderThickness="3"
-            CornerRadius="10"
-            Background="Blue"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
-            <TextBlock x:Name="QuestionTxt" 
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       FontSize="20"
-                       FontWeight="Black"
-                       TextWrapping="Wrap"
-                       Width="700"
-                       Height="70"
-                       Foreground="White"
-                       TextAlignment="Center" />
+            CornerRadius="10">
+            <TextBlock
+                x:Name="QuestionTxt"
+                Width="700"
+                Height="60"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="20"
+                FontWeight="Black"
+                Foreground="White"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
         </Border>
         <Button
             x:Name="Answer1Btn"
@@ -80,7 +81,7 @@
             Grid.Row="2"
             Grid.Column="0"
             Width="350"
-            Height="80"
+            Height="50"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="blue"
@@ -95,8 +96,7 @@
                 </Style>
             </Button.Resources>
             <Button.Content>
-                <TextBlock x:Name="Answer1Txt"
-                           TextWrapping="Wrap"/>
+                <TextBlock x:Name="Answer1Txt" TextWrapping="Wrap" />
             </Button.Content>
         </Button>
         <Button
@@ -105,7 +105,7 @@
             Grid.Row="3"
             Grid.Column="0"
             Width="350"
-            Height="80"
+            Height="50"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="blue"
@@ -120,8 +120,7 @@
                 </Style>
             </Button.Resources>
             <Button.Content>
-                <TextBlock x:Name="Answer2Txt"
-                   TextWrapping="Wrap"/>
+                <TextBlock x:Name="Answer2Txt" TextWrapping="Wrap" />
             </Button.Content>
         </Button>
         <Button
@@ -130,7 +129,7 @@
             Grid.Row="2"
             Grid.Column="1"
             Width="350"
-            Height="80"
+            Height="50"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="blue"
@@ -145,8 +144,7 @@
                 </Style>
             </Button.Resources>
             <Button.Content>
-                <TextBlock x:Name="Answer3Txt"
-                   TextWrapping="Wrap"/>
+                <TextBlock x:Name="Answer3Txt" TextWrapping="Wrap" />
             </Button.Content>
         </Button>
         <Button
@@ -155,7 +153,7 @@
             Grid.Row="3"
             Grid.Column="1"
             Width="350"
-            Height="80"
+            Height="50"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="blue"
@@ -170,8 +168,7 @@
                 </Style>
             </Button.Resources>
             <Button.Content>
-                <TextBlock x:Name="Answer4Txt"
-                   TextWrapping="Wrap"/>
+                <TextBlock x:Name="Answer4Txt" TextWrapping="Wrap" />
             </Button.Content>
         </Button>
         <Button
